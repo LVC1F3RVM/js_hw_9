@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new-project</title>
+    <link rel="stylesheet" href="./css/slyle.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <h1>calculator mk.1</h1>
+        <!-- <span id="num1"></span>
+        <span id="sign"></span>
+        <span id="num2"></span> -->
+    <p class="item-input">
+        <form name="form"><input type="text" name="textview" readonly></form>
+    </p>
+
+    <!-- <p id="result">Result: <span></span></p> -->
+
+        <table id="calc-buttons">
+            <tbody>
+                <tr>
+                    <td><button class="item" onclick="insert('7')">7</button></td>
+                    <td><button class="item" onclick="insert('8')">8</button></td>
+                    <td><button class="item" onclick="insert('9')">9</button></td>
+                    <td></td>
+                    <td><button class="item" onclick="insert('/')">&divide;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="item" onclick="insert('4')">4</button></td>
+                    <td><button class="item" onclick="insert('5')">5</button></td>
+                    <td><button class="item" onclick="insert('6')">6</button></td>
+                    <td></td>
+                    <td><button class="item" onclick="insert('*')">&times;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="item" onclick="insert('1')">1</button></td>
+                    <td><button class="item" onclick="insert('2')">2</button></td>
+                    <td><button class="item" onclick="insert('3')">3</button></td>
+                    <td></td>
+                    <td><button class="item" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="item-zero" onclick="insert('0')">0</button></td>
+                    <td><button class="item" onclick="insert('.')">.</button></td>
+                    <td><button class="item-equal" onclick="equal()">=</button></td>
+                    <td></td>
+                    <td><button class="item" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="item-clean" onclick="clean()">C</button></td>
+                </tr>
+            </tbody>
+        </table>
+    
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
